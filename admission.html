@@ -85,8 +85,11 @@
 
     <header>
         <div class="logo-area">
-            <h1>IKUU BOYS' HIGH SCHOOL</h1>
-            <p>National Academic Center</p>
+            <img src="logo.png.png" alt="Ikuu Boys High School Crest">
+            <div class="logo-text">
+                <h1>IKUU BOYS' HIGH SCHOOL</h1>
+                <p>National Academic Center</p>
+            </div>
         </div>
         <nav>
             <a href="index.html">Home</a>
@@ -104,6 +107,7 @@
     <div class="container">
         <div class="grid-2col">
 
+            <!-- Left Column: Process Flow & Requirements -->
             <div>
                 <section class="section">
                     <h2 class="section-title">The Onboarding Sequence</h2>
@@ -126,27 +130,13 @@
                 </section>
 
                 <section class="section">
-                    <h2 class="section-title">Essential Downloads</h2>
-                    <p style="color: var(--text-muted);">Acquire authorized registration paperwork packs directly via the links below:</p>
-                    <ul class="doc-download-list">
-                        <li>
-                            <div>
-                                <strong style="color: var(--primary-blue);">Form 1 Joining Instructions Pack</strong>
-                                <p style="font-size: 0.8rem; color: var(--text-muted);">Includes full items requirement checklist & code of conduct</p>
-                            </div>
-                            <a href="#" onclick="alert('Downloading Joining Instructions PDF template...'); return false;" class="download-action-btn" style="background: var(--primary-blue); color: #fff;">Download</a>
-                        </li>
-                        <li>
-                            <div>
-                                <strong style="color: var(--primary-blue);">Official Medical Examination Form</strong>
-                                <p style="font-size: 0.8rem; color: var(--text-muted);">Required for physical conditioning confirmation</p>
-                            </div>
-                            <a href="#" onclick="alert('Downloading Medical Form template...'); return false;" class="download-action-btn" style="background: var(--primary-blue); color: #fff;">Download</a>
-                        </li>
-                    </ul>
+                    <h2 class="section-title">Student Life Overview</h2>
+                    <img src="stud.jpg" class="content-image-embed" alt="Ikuu Boys High School Student Assembly Forum Area">
+                    <p style="margin-top:15px; font-size:0.95rem; color:var(--text-muted);">We integrate sound character building within academic pathways, optimizing classroom work alongside communal presentations and peer accountability.</p>
                 </section>
             </div>
 
+            <!-- Right Column: Interactive Tuition Fee Estimator Engine -->
             <div>
                 <section class="section">
                     <h2 class="section-title">Fee Configuration Engine</h2>
@@ -202,6 +192,27 @@
 
                     <p style="font-size: 0.8rem; color: var(--text-muted); margin-top: 15px; text-align: center; font-style: italic;">Note: Fees are structurally payable exclusively into official school bank accounts via Co-operative Bank or KCB banking slips or paybills.</p>
                 </section>
+
+                <section class="section">
+                    <h2 class="section-title">Essential Downloads</h2>
+                    <p style="color: var(--text-muted);">Acquire authorized registration paperwork packs directly via the links below:</p>
+                    <ul class="doc-download-list">
+                        <li>
+                            <div>
+                                <strong style="color: var(--primary-blue);">Form 1 Joining Instructions Pack</strong>
+                                <p style="font-size: 0.8rem; color: var(--text-muted);">Includes full items requirement checklist & code of conduct</p>
+                            </div>
+                            <a href="#" onclick="alert('Downloading Joining Instructions PDF template...'); return false;" class="download-action-btn" style="background: var(--primary-blue); color: #fff;">Download</a>
+                        </li>
+                        <li>
+                            <div>
+                                <strong style="color: var(--primary-blue);">Official Medical Examination Form</strong>
+                                <p style="font-size: 0.8rem; color: var(--text-muted);">Required for physical conditioning confirmation</p>
+                            </div>
+                            <a href="#" onclick="alert('Downloading Medical Form template...'); return false;" class="download-action-btn" style="background: var(--primary-blue); color: #fff;">Download</a>
+                        </li>
+                    </ul>
+                </section>
             </div>
 
         </div>
@@ -211,6 +222,7 @@
         <p>&copy; 2026 Ikuu Boys' High School. All Rights Reserved.</p>
     </footer>
 
+    <!-- Fee Calculation Execution Script Logic -->
     <script>
         function calculateTotal() {
             let baseFee = 53554;
