@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admissions Portal | Ikuu Boys' High School</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* High-Level Vertical Process Flow Styles */
+        .process-flow {
+            position: relative;
+            padding-left: 30px;
+            border-left: 3px solid var(--accent-gold);
+            margin-top: 25px;
+        }
+
+        .flow-step {
+            position: relative;
+            margin-bottom: 35px;
+        }
+
+        .flow-step::before {
+            content: '';
+            position: absolute;
+            left: -41px;
+            top: 4px;
+            width: 18px;
+            height: 18px;
+            border-radius: 50%;
+            background: var(--primary-blue);
+            border: 4px solid var(--accent-gold);
+        }
+
+        .flow-step h3 {
+            color: var(--primary-blue);
+            font-size: 1.15rem;
+            margin-bottom: 6px;
+        }
+
+        /* Interactive Estimator Engine Interface Card */
+        .estimator-card {
+            background: #f8fafc;
+            border: 1px solid #e2e8f0;
+            border-radius: 10px;
+            padding: 30px;
+        }
+
+        .calc-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 12px 0;
+            border-bottom: 1px dashed #cbd5e1;
+        }
+
+        .calc-row:last-of-type {
+            border-bottom: none;
+        }
+
+        .calc-checkbox {
+            width: 18px;
+            height: 18px;
+            cursor: pointer;
+        }
+
+        .total-banner {
+            background: var(--primary-blue);
+            color: white;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            margin-top: 25px;
+        }
+
+        .total-banner span {
+            display: block;
+            font-size: 2rem;
+            font-weight: 800;
+            color: var(--accent-gold);
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo-area">
+            <h1>IKUU BOYS' HIGH SCHOOL</h1>
+            <p>National Academic Center</p>
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="admissions.html" class="active">Admissions</a>
+            <a href="tenders.html">Procurement/PPIP</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+
+    <div class="page-header-ribbon">
+        <h1>Student Enrollment & Tuition Registry</h1>
+        <p>Clearance pathways for national selections and continuing students</p>
+    </div>
+
+    <div class="container">
+        <div class="grid-2col">
+
+            <div>
+                <section class="section">
+                    <h2 class="section-title">The Onboarding Sequence</h2>
+                    <p style="color: var(--text-muted); margin-bottom: 15px;">Follow this sequential registration pipeline upon receipt of an official calling letter:</p>
+
+                    <div class="process-flow">
+                        <div class="flow-step">
+                            <h3>Step 1: Document Clearance</h3>
+                            <p style="font-size: 0.95rem; color: #475569;">Present your original KCPE result slip, NEMIS registration configuration profile, and primary institution leaving certificates to the admissions desk.</p>
+                        </div>
+                        <div class="flow-step">
+                            <h3>Step 2: Medical Examination</h3>
+                            <p style="font-size: 0.95rem; color: #475569;">Submit the filled medical history verification document signed and stamped by a registered government health officer.</p>
+                        </div>
+                        <div class="flow-step">
+                            <h3>Step 3: Uniform & Boarding Assignment</h3>
+                            <p style="font-size: 0.95rem; color: #475569;">Complete kit checks at the institutional stores and obtain house block desk numbers from the boarding master.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="section">
+                    <h2 class="section-title">Essential Downloads</h2>
+                    <p style="color: var(--text-muted);">Acquire authorized registration paperwork packs directly via the links below:</p>
+                    <ul class="doc-download-list">
+                        <li>
+                            <div>
+                                <strong style="color: var(--primary-blue);">Form 1 Joining Instructions Pack</strong>
+                                <p style="font-size: 0.8rem; color: var(--text-muted);">Includes full items requirement checklist & code of conduct</p>
+                            </div>
+                            <a href="#" onclick="alert('Downloading Joining Instructions PDF template...'); return false;" class="download-action-btn" style="background: var(--primary-blue); color: #fff;">Download</a>
+                        </li>
+                        <li>
+                            <div>
+                                <strong style="color: var(--primary-blue);">Official Medical Examination Form</strong>
+                                <p style="font-size: 0.8rem; color: var(--text-muted);">Required for physical conditioning confirmation</p>
+                            </div>
+                            <a href="#" onclick="alert('Downloading Medical Form template...'); return false;" class="download-action-btn" style="background: var(--primary-blue); color: #fff;">Download</a>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+
+            <div>
+                <section class="section">
+                    <h2 class="section-title">Fee Configuration Engine</h2>
+                    <p style="color: var(--text-muted); margin-bottom: 20px;">Adjust parameters below to estimate terms structures based on national structural statutory allocations and additional personal equipment configurations:</p>
+
+                    <div class="estimator-card">
+                        <div class="calc-row">
+                            <div>
+                                <strong style="color: var(--primary-blue);">Base National Tuition</strong>
+                                <p style="font-size: 0.8rem; color: var(--text-muted);">Subsidized Ministry allocation minimum baseline fees</p>
+                            </div>
+                            <span style="font-weight: 700; color: var(--navy-bright);">Ksh 53,554</span>
+                        </div>
+
+                        <div class="calc-row">
+                            <div>
+                                <label for="uniform-opt" style="font-weight: 600; color: var(--primary-blue); cursor: pointer;">Add Full Uniform Set Kit</label>
+                                <p style="font-size: 0.8rem; color: var(--text-muted);">2 blazers, 3 trousers, 3 shirts, pullovers, and sports kit</p>
+                            </div>
+                            <div style="display: flex; align-items: center; gap: 10px;">
+                                <span style="font-size: 0.9rem; color: var(--text-muted);">+ Ksh 8,500</span>
+                                <input type="checkbox" id="uniform-opt" class="calc-checkbox" onchange="calculateTotal()">
+                            </div>
+                        </div>
+
+                        <div class="calc-row">
+                            <div>
+                                <label for="caution-opt" style="font-weight: 600; color: var(--primary-blue); cursor: pointer;">Caution Money Deposit</label>
+                                <p style="font-size: 0.8rem; color: var(--text-muted);">Refundable security deposit for newly admitted students only</p>
+                            </div>
+                            <div style="display: flex; align-items: center; gap: 10px;">
+                                <span style="font-size: 0.9rem; color: var(--text-muted);">+ Ksh 2,000</span>
+                                <input type="checkbox" id="caution-opt" class="calc-checkbox" onchange="calculateTotal()" checked>
+                            </div>
+                        </div>
+
+                        <div class="calc-row">
+                            <div>
+                                <label for="welfare-opt" style="font-weight: 600; color: var(--primary-blue); cursor: pointer;">Student Welfare & Insurance</label>
+                                <p style="font-size: 0.8rem; color: var(--text-muted);">Covers institutional medical checkups and internal field insurance</p>
+                            </div>
+                            <div style="display: flex; align-items: center; gap: 10px;">
+                                <span style="font-size: 0.9rem; color: var(--text-muted);">+ Ksh 1,500</span>
+                                <input type="checkbox" id="welfare-opt" class="calc-checkbox" onchange="calculateTotal()">
+                            </div>
+                        </div>
+
+                        <div class="total-banner">
+                            Estimated Annual Aggregate Balance
+                            <span id="grand-total">Ksh 55,554</span>
+                        </div>
+                    </div>
+
+                    <p style="font-size: 0.8rem; color: var(--text-muted); margin-top: 15px; text-align: center; font-style: italic;">Note: Fees are structurally payable exclusively into official school bank accounts via Co-operative Bank or KCB banking slips or paybills.</p>
+                </section>
+            </div>
+
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Ikuu Boys' High School. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        function calculateTotal() {
+            let baseFee = 53554;
+
+            const uniformCheck = document.getElementById('uniform-opt');
+            const cautionCheck = document.getElementById('caution-opt');
+            const welfareCheck = document.getElementById('welfare-opt');
+
+            if (uniformCheck.checked) baseFee += 8500;
+            if (cautionCheck.checked) baseFee += 2000;
+            if (welfareCheck.checked) baseFee += 1500;
+
+            // Format number configuration safely with comma separations
+            document.getElementById('grand-total').innerText = "Ksh " + baseFee.toLocaleString();
+        }
+
+        // Initial balance load trigger on DOM mount
+        window.onload = calculateTotal;
+    </script>
+</body>
+</html>
